@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ServiceHub</title>
+<title>ServiceHub Pro</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
-    <h2>ServiceHub 🚀</h2>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="dashboard.html">Dashboard</a>
-    </div>
+    <h2>ServiceHub ⚡</h2>
 </div>
 
-<div class="container fade">
-    <h1>Welcome to Smart Service Marketplace</h1>
-    <p>Book, Manage & Track services in real-time</p>
-    <br>
-    <button onclick="goServices()">Explore Services</button>
+<!-- HERO -->
+<div class="hero">
+    <h1>Book Trusted Home Services</h1>
+    <p>Electrician • Plumber • AC Repair</p>
+</div>
+
+<!-- SERVICES -->
+<div class="services">
+
+<div class="service-card" onclick="selectService('Electrician')">
+    <img src="electrician.jpg">
+    <h3>Electrician</h3>
+</div>
+
+<div class="service-card" onclick="selectService('Plumber')">
+    <img src="plumber.jpg">
+    <h3>Plumber</h3>
+</div>
+
+<div class="service-card" onclick="selectService('AC Repair')">
+    <img src="ac.jpg">
+    <h3>AC Repair</h3>
+</div>
+
 </div>
 
 <script src="script.js"></script>

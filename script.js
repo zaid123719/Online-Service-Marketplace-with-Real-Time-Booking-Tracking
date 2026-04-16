@@ -48,3 +48,20 @@ if (document.getElementById("distance")) {
         }
     }, 2000);
 }
+function selectService(service) {
+    localStorage.setItem("service", service);
+    window.location.href = "booking.html";
+}
+function selectService(service) {
+    localStorage.setItem("service", service);
+    window.location.href = "booking.html";
+}
+
+if (document.getElementById("serviceName")) {
+    document.getElementById("serviceName").innerText =
+        "Booking for: " + localStorage.getItem("service");
+}
+
+function confirmBooking() {
+    alert("Booking Confirmed!");
+}
